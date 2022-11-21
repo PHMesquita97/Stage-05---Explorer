@@ -1,0 +1,1 @@
+Exportamos uma variável ou função e, ao importar, devemos colocar o mesmo nome.
