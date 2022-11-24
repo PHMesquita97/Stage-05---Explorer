@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #121214;
+    --base-color: 194;
+    --btn-bg-color: hsla(var(--base-color), 100%, 63%, 0.13);
+    --btn-color: hsl(var(--base-color), 100%, 63%);
+    --text-color: #FFFFFF;
+
+    font-size: 62.5%;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+
+    display: grid;
+
+    min-height: 100vh;
+}
+
+main{
+    align-self: flex-end;
+    justify-self: center;
+}
+
+span{
+    font-size: 8.8rem;
+    line-height: 10.3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    align-self: end;
+    justify-self: end;
+
+    padding: 0 3.2rem 3.2rem;
+}
+
+.hide{
+    display: none;
+}
+
+.timer{
+    margin-bottom: 1.6rem;
+}
+
+.controls{
+    background: var(--btn-bg-color);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2.2rem 4rem;
+    gap: 3.2rem;
+
+    width: clamp( 10rem, 10rem +30vw, 22.8rem);
+    height: clamp( 8rem, 5rem + 10vh, 10.8rem);
+    
+    border-radius: 9rem;
+}
+
+.play svg path,
+.pause svg path,
+.soundOn svg path{
+    fill:var(--btn-color)
+}
+
+
