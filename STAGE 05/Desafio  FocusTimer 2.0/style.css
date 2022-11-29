@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --text-color: #323238;
+    --btn-hover: #02799D;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    min-height: 100vh;
+    align-content: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19.2rem; 
+}
+
+.timer{
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+
+    text-transform: uppercase;
+
+    color: var(--text-color);
+
+    
+}
+
+.sounds{
+    display: grid;
+    grid-template-areas: 
+    "a a"
+    "b b";
+
+    gap: 3.2rem;
+}
+
+.timer-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+.sounds button svg path:nth-child(1):hover{
+    fill:var(--btn-hover)
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width: 885px) {
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem; 
+    }
+}
+@media (max-width: 790px) {
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem; 
+    }
+}
+
+@media (max-width: 740px) {
+    body{
+        font-family: 'Roboto', sans-serif;
+        display: grid;
+        min-height: 100vh;
+        align-content: center;
+    }
+
+    main{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem; 
+    }
+
+    .timer{
+        font-size: 10.6rem;
+        line-height: 14.8rem;
+    
+        text-transform: uppercase;
+    
+        color: var(--text-color);
+    }
+    
+    .sounds{
+        display: grid;
+        grid-template-areas: 
+        "a a"
+        "b b";
+    
+        gap: 3.2rem;
+    }
+    
+    .timer-buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 325px) {
+    body{
+        font-family: 'Roboto', sans-serif;
+        display: grid;
+        min-height: 100vh;
+        align-content: center;
+    }
+
+    main{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem; 
+    }
+
+    .timer{
+        font-size: 10rem;
+        line-height: 14.8rem;
+    
+        text-transform: uppercase;
+    
+        color: var(--text-color);
+    }
+    
+    .sounds{
+        display: grid;
+        grid-template-areas: 
+        "a a"
+        "b b";
+    
+        gap: 3.2rem;
+    }
+    
+    .timer-buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+}
